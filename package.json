@@ -1,18 +1,31 @@
-
 {
   "name": "react-native-binary-put",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Http PUT content of any url as binary data to a web REST service",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npomfret/react-native-binary-put.git"
   },
   "keywords": [
-    "react-native"
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "http",
+    "PUT",
+    "binary"
   ],
-  "author": "",
-  "license": "",
+  "author": "Nick Pomfret",
+  "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.29.0"
+  },
+  "bugs": {
+    "url": "https://github.com/npomfret/react-native-binary-put/issues"
+  },
+  "homepage": "https://github.com/npomfret/react-native-binary-put#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

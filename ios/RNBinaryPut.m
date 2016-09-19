@@ -10,10 +10,10 @@
 }
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_METHOD(put:(NSString *)authHeader
-                  sourceUri:(NSString *)sourceUri
+RCT_EXPORT_METHOD(put:(NSString *)sourceUri
                   targetUri:(NSString *)targetUri
                   contentType:(NSString *)contentType
+                  authHeader:(NSString *)authHeader
                   callback:(RCTResponseSenderBlock)callback)
 {
     

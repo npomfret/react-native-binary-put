@@ -1,6 +1,7 @@
+'use strict';
 
-import { NativeModules } from 'react-native';
+import {NativeModules} from "react-native";
 
-const { RNBinaryPut } = NativeModules;
+const {RNBinaryPut} = NativeModules;
 
 export default RNBinaryPut;

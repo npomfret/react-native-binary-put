@@ -33,21 +33,21 @@
   	```
       compile project(':react-native-binary-put')
   	```
-
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNBinaryPut.sln` in `node_modules/react-native-binary-put/windows/RNBinaryPut.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Cl.Json.RNBinaryPut;` to the usings at the top of the file
-  - Add `new RNBinaryPutPackage()` to the `List<IReactPackage>` returned by the `Packages` method
-      
-
 ## Usage
 ```javascript
 import RNBinaryPut from 'react-native-binary-put';
 
-// TODO: What do with the module?
-RNBinaryPut;
+const sourceUrl = "http://...";
+const targetUrl = "http://my.service/image/123"
+const authHeader = null;
+const contentType = 'image/png';
+
+RNBinaryPut.put(sourceUrl, targetUrl, contentType, authHeader, (error, success) => {
+  if(error) {
+    console.warn("upload failed", error);    
+  } else {
+    console.warn("upload success", success);        
+  }
+});
 ```
   
